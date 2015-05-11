@@ -3,7 +3,7 @@
 
 
 
-##### 
+## 
 
 **标签：** ``,``
 
@@ -18,7 +18,7 @@
 
 
 
-##### 题目示例：请用5种以上的语言编写“hello world”程序
+## 题目示例：请用5种以上的语言编写“hello world”程序
 
 **标签：** `标签示例`,`标签2`
 
@@ -26,7 +26,7 @@
 
 *  php 
 
-```
+```php
 <?php 
     echo 'hello world';
 
@@ -34,17 +34,16 @@
 
 * javascript
 
-
-```
-	<script>
-		alert("hello world")	
-	</script>
+```javascript
+<script>
+    alert("hello world")	
+</script>
 
 ```
 
 * golang
 
-```
+```go
 package main 
 
 import "fmt"
@@ -57,7 +56,7 @@ func main() {
 
 * c
 
-```
+```c
 #include <stdio.h>
 
 void main(void)
@@ -69,7 +68,7 @@ void main(void)
 
 * java
 
-```
+```java
 public class HelloWorld{ 
 	public static void main(String[] args) {  
 		System.out.println("Hello World!"); 
