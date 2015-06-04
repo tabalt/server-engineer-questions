@@ -2,7 +2,7 @@
 # 编码
 
 
-> ### 编写一个php函数计算两个文件的相对路径
+> 编写一个php函数计算两个文件的相对路径
 
 ```php
 function getRelativePath($fileA, $fileB) {
@@ -35,7 +35,7 @@ function getRelativePath($fileA, $fileB) {
 ```
 
 
-> ### 用 PHP 打印出前一天的时间,格式是 `2015-05-20 22:21:21`
+> 用 PHP 打印出前一天的时间,格式是 `2015-05-20 22:21:21`
 
 ```php
 echo date('Y-m-d H:i:s', date('U')-86400);
@@ -44,14 +44,14 @@ echo date('Y-m-d H:i:s', strtotime('-1 day'));
 ```
 
 
-> ### 不使用第三个变量,交换变量 a、b 的值
+> 不使用第三个变量,交换变量 a、b 的值
 
 ```php
 list($a, $b) = array($b, $a);
 ```
 
 
-> ### 写出单例模式和工厂模式的程序片段,并列出其中的注意点
+> 写出单例模式和工厂模式的程序片段,并列出其中的注意点
 
 ```php
 class Single {
@@ -86,7 +86,7 @@ class Factory {
 ```
 
 
-> ### 用代码写出获取 url 文件后缀的方法,如 `http://www.baidu.com/foo/bar.php?id=value` 中.php 的值
+> 用代码写出获取 url 文件后缀的方法,如 `http://www.baidu.com/foo/bar.php?id=value` 中.php 的值
 
 ```php
 $url = 'http://www.baidu.com/foo/bar.php?id=value';
@@ -95,7 +95,7 @@ $ext = pathinfo($path, PATHINFO_EXTENSION);
 ```
 
 
-> ### 用 php 写出获取中位数的方法
+> 用 php 写出获取中位数的方法
 
 ```php
 $numList = array(
@@ -130,7 +130,7 @@ echo $mid;
 ```
 
 
-> ### 一遍找出一个数组中最大的 2 个值
+> 一遍找出一个数组中最大的 2 个值
 
 ```php
 $itemList = array(
@@ -167,7 +167,7 @@ var_dump($big2);
 ```
 
 
-> ### 多维数组排序
+> 多维数组排序
 
 ```php
 $data = array(
@@ -210,7 +210,7 @@ var_dump($data);
 ```
 
 
-> ### 写出一个能创建多级目录的 PHP 函数
+> 写出一个能创建多级目录的 PHP 函数
 
 ```php
 function mkdirs($dir) {
@@ -241,7 +241,7 @@ mkdirs2('dir4/dir5/dir6');
 
 ```
 
-> ### 
+> 
 
 ```php
 
