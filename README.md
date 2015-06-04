@@ -14,7 +14,7 @@
 * PHP篇
 
 	* 常用函数
-	* 编码
+	* [编码](php/coding.md)
 	* 
 
 * Linux篇
