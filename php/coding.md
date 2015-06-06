@@ -241,10 +241,113 @@ mkdirs2('dir4/dir5/dir6');
 
 ```
 
+> 如何实现字符串翻转?
+
+```php
+
+$str = 'abc';
+
+// 使用php内置函数
+echo strrev($str);
+
+// 循环输出
+$length = strlen($str);
+$revStr = '';
+
+for ($i = $length - 1; $i >= 0; $i --) {
+    $revStr .= $str{$i};
+}
+echo $revStr;
+
+```
+
+
+> 实现中文字串截取无乱码的方法
+
+```php
+
+当用 substr 截取中文字符会出现乱码,如果装了 mb 扩展, 用 mb_substr 截取就不会乱码
+
+
+```
+
+
+> 用 PHP 编写显示客户端IP 与服务器IP 的代码
+
+```php
+// 客户端IP:
+echo $_SERVER[REMOTE_ADDR];
+echo getenv('REMOTE_ADDR');
+
+// 服务器IP:
+if (isset($_SERVER['SERVER_ADDR'])) {
+    $ip = $_SERVER['SERVER_ADDR'];
+} else {
+    $ip = $_SERVER['LOCAL_ADDR'];
+}
+```
+
+> 如何修改 SESSION 的生存时间
+
+```php
+1、将 php.ini 中 session.gc_maxlifetime 设置为 9999(默认 为 1440)重启 apache 即可
+2、代码中修改：
+$savePath = "./session_save_dir/";
+$lifeTime = 24 * 3600;
+session_save_path($savePath);
+session_set_cookie_params($lifeTime);
+session_start();
+
+3、setcookie() 或 session_set_cookie_params($lifeTime)
+
+```
+
+
+> 有一个网页(如：http://www.baidu.com/index.html），如何得到它的内容?
+
+```php
+$url = 'http://www.baidu.com/index.html';
+echo file_get_contents($url);
+
+```
+
+
+> 在HTTP1.0中，状态码401的含义是? 如果返回“找不到文件”的提示，其语句为?
+
+```php
+状态值为 401,代表未被授权;
+
+header('HTTP/1.1 401 Unauthorized');
+header('status: 401 Unauthorized');
+
+// 找不到文件
+header('HTTP/1.1 404 Not Found');
+header("status: 404 Not Found");
+
+header('HTTP/1.1 301 Moved Permanently');
+header('Location: http://www.9qc.com/');
+
+```
+
+> PHP中 heredoc 的用法
+
+```php
+heredoc 的语法是用"<<<"加上自己定义成对的标签,在标签范围內的 文字视为一个字符串：
+
+$str = <<<EOF
+I saw a dog yesterday.
+EOF;
+
+需要注意:
+1、"<<<"后面的 EOF 是自定义的标签名称,必须要成对,最后要加上分号表示结束。
+2、结束的标签前面最好不要有空格,以免发生错误!
+
+```
+
 > 
 
 ```php
 
-```
 
+```
 
