@@ -13,12 +13,15 @@
 
 * PHP篇
 
-	* 常用函数
+	* [函数](php/function.md)
 	* [编码](php/coding.md)
-	* 
+	* [框架](php/framework.md)
+    * 
 
 * Linux篇
 * WEB服务器篇
 * 数据库篇
-* 架构篇
+* [工程篇](project.md)
+* 前端篇
 * 算法篇
+* [架构篇](architecture.md)
