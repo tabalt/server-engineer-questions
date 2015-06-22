@@ -21,7 +21,10 @@
 * Linux篇
 * WEB服务器篇
 * 数据库篇
+
+    * [MySql](database/mysql.md)
+
 * [工程篇](project.md)
-* 前端篇
+* [前端篇](fe.md)
 * 算法篇
 * [架构篇](architecture.md)
