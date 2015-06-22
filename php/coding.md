@@ -344,10 +344,98 @@ EOF;
 
 ```
 
+> 请写一个函数验证电子邮件的格式是否正确
+
+```php
+function is_email($email) {
+    return preg_match("/^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/", $email);
+}
+```
+
+> $_SERVER数组中有哪些有用的值？
+
+```php
+Array
+(
+    [SCRIPT_FILENAME] => /var/www/test/server.php
+    [QUERY_STRING] => id=1&name=test
+    [REQUEST_METHOD] => GET
+    [SCRIPT_NAME] => /server.php
+    [REQUEST_URI] => /server.php?id=1&name=test
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_SOFTWARE] => nginx/1.6.0
+    [REMOTE_ADDR] => 127.0.0.1
+    [REMOTE_PORT] => 56442
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [SERVER_NAME] => test.com
+    [REDIRECT_STATUS] => 200
+    [HTTP_HOST] => test.com
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.104 Safari/537.36
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, sdch
+    [HTTP_ACCEPT_LANGUAGE] => zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4
+    [PHP_SELF] => /server.php
+    [REQUEST_TIME_FLOAT] => 1434974920.5889
+    [REQUEST_TIME] => 1434974920
+)
+```
+
+> 写出一些在 PHP 输出一段 HTML代码的办法
+
+```php
+1、echo 或 print等直接输出
+2、require 或 include 包含一个 HTML 代码文件
+3、模板文件等中：<?php if($showHtml) { ?> <p>I am html code. </p> <?php } ?>
+```
+
+> $userList = array('james', 'tom', 'symfony'); 请打印出 第一个元素的值；将所有值合并成用','号分隔的字符串输出
+
+```php
+echo $userList[0];
+echo implode(",", $userList);
+```
+
+> $a = 'abcdef'; 请打印出$a的第一个字母
+
+```php
+echo $a{0};
+```
+
+> 请写出 PHP5 权限控制修饰符
+
+```php
+public protected private
+```
+
+> 请写出 php5 的构造函数和析构函数
+
+```php
+__construct __destruct
+```
+
 > 
 
 ```php
 
+```
+
+> 
+
+```php
 
 ```
 
+> 
+
+```php
+
+```
+
+> 
+
+```php
+
+```
