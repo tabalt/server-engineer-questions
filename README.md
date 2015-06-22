@@ -22,7 +22,7 @@
 * WEB服务器篇
 * 数据库篇
 
-    * [MySql](database/mysql.md)
+    * [MySQL](database/mysql.md)
 
 * [工程篇](project.md)
 * [前端篇](fe.md)
